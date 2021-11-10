@@ -35,7 +35,7 @@ namespace delegate_test
     class SysHelper
     {
         public static TextBox _textbox;
-        //呼叫其他執行緒要透過委派，宣告Delegate和參數，要與被呼叫的方法一樣，包含迴船型別
+        //呼叫其他執行緒要透過委派，宣告Delegate和參數，要與被呼叫的方法一樣，包含回傳型別
         delegate void PrintHandler(TextBox tb, string text);
         public static void Run()
         {
